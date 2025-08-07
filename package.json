@@ -1,0 +1,21 @@
+{
+  "name": "student-management-app",
+  "version": "1.0.0",
+  "description": "Application de gestion des étudiants avec suivi des paiements et cours",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "keywords": ["student", "management", "education", "payment", "certificates"],
+  "author": "Votre Nom",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
